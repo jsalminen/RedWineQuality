@@ -1,0 +1,13 @@
+Data analysis with R project references
+
+Data from:
+P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. 
+Modeling wine preferences by data mining from physicochemical properties.
+In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236.
+
+Description of the dataset: https://s3.amazonaws.com/udacity-hosted-downloads/ud651/wineQualityInfo.txt
+
+Diamonds Exploration by Chris Saden: 
+https://s3.amazonaws.com/udacity-hosted-downloads/ud651/diamondsExample.html
+
+Various R help pages accessed through RStudio.
