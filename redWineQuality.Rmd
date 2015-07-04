@@ -80,7 +80,7 @@ summary(wine$fixed.acidity)
 
 Fixed acidity of the wines is concentated around the value 8, with some skew to the right. Most wines have the fixed acidity between 7 and 9.5. It will be interesting to see whether the best wines have the highest acidity. In that case they would be easy to identify.
 
-```{r}
+```{r, echo=FALSE}
 wine[wine$fixed.acidity > 15, ]
 ```
 There are a few outliers. Weird, it looks like three of them could be repeated measurements of the same wine.
@@ -313,7 +313,7 @@ ggplot(wine, aes(as.factor(quality), residual.sugar)) +
 
 Lots of outliers..
 
-```{r}
+```{r, echo=FALSE}
 ggplot(wine, aes(as.factor(quality), residual.sugar)) + 
   geom_boxplot() +
    ylim(0, 4)
@@ -335,7 +335,7 @@ ggplot(wine, aes(as.factor(quality), chlorides)) +
 
 Again many outliers.
 
-```{r}
+```{r, echo=FALSE}
 ggplot(wine, aes(as.factor(quality), chlorides)) + 
   geom_boxplot() +
   ylim(0, 0.2)
@@ -358,7 +358,7 @@ ggplot(wine, aes(as.factor(quality), free.sulfur.dioxide)) +
 
 Quite many outliers.
 
-```{r}
+```{r, echo=FALSE}
 ggplot(wine, aes(as.factor(quality), free.sulfur.dioxide)) + 
   geom_boxplot() + 
   ylim(0, 30)
@@ -379,7 +379,7 @@ ggplot(wine, aes(as.factor(quality), total.sulfur.dioxide)) +
 
 Outliers.
 
-```{r}
+```{r, echo=FALSE}
 ggplot(wine, aes(as.factor(quality), total.sulfur.dioxide)) + 
   geom_boxplot() + 
   ylim(0, 120)
@@ -491,7 +491,7 @@ ggplot(wine, aes(as.factor(quality), sulphates)) +
 
 Outliers ruining a plot again.
 
-```{r}
+```{r, echo=FALSE}
 ggplot(wine, aes(as.factor(quality), sulphates)) + 
   geom_boxplot() + 
   ylim(0, 1)
@@ -740,7 +740,7 @@ model_3 <- randomForest(quality.bin ~ alcohol + fixed.acidity + volatile.acidity
 prediction_3 <- predict(model_3, newdata = test)
 ```
 
-```{r, echo=F}
+```{r, echo=FALSE}
 # Print prediction results
 
 cat('K nearest neighbors predictions:')
